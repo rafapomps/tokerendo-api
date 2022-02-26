@@ -17,6 +17,15 @@ var usuarios = require("./routes/usuarios");
 
 app.use("/usuarios", usuarios);
 
+var eventos = require("./routes/eventos");
+
+app.use("/eventos", eventos);
+
+var empresas = require("./routes/empresa");
+
+app.use("/empresa", empresas);
+
+
 app.get("/", function (req, res) {
     res.send("Tokerendo - API");
   });
