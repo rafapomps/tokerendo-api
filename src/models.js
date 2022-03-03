@@ -14,11 +14,9 @@ const Usuario = database.define("usuario", {
   },
   datanasc: {
     type: Sequelize.STRING,
-    allowNull: false,
   },
   telefone: {
     type: Sequelize.STRING,
-    allowNull: false,
   },
   email: {
     type: Sequelize.STRING,
@@ -27,15 +25,15 @@ const Usuario = database.define("usuario", {
   },
   genero: {
     type: Sequelize.STRING,
-    allowNull: false,
   },
   endereco: {
     type: Sequelize.STRING,
-    allowNull: false,
   },
   cnpj: {
     type: Sequelize.STRING,
-    allowNull: false,
+  },
+  senha: {
+    type: Sequelize.STRING,
   },
 });
 
@@ -51,31 +49,31 @@ const Evento = database.define("evento", {
   },
   bairro: {
     type: Sequelize.STRING,
-    allowNull: false,
+
   },
   cidade: {
     type: Sequelize.STRING,
-    allowNull: false,
+
   },
   data: {
-    type: Sequelize.STRING,
-    allowNull: false,
+    type: Sequelize.DATE,
+
   },
   preco: {
-    type: Sequelize.STRING,
-    allowNull: false,
+    type: Sequelize.DECIMAL(10,2),
+
   },
   horario: {
     type: Sequelize.STRING,
-    allowNull: false,
+
   },
   endereco: {
     type: Sequelize.STRING,
-    allowNull: false,
+
   },
   telefone: {
     type: Sequelize.STRING,
-    allowNull: false,
+
   },
 });
 
