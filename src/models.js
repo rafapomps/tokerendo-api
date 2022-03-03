@@ -1,6 +1,6 @@
 const Sequelize = require("sequelize");
 
-const database = new Sequelize("mysql://root:@localhost:3306/tokerendo");
+const database = new Sequelize(process.env.DATABASE_URL);
 
 const Usuario = database.define("usuario", {
   id: {

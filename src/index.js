@@ -1,7 +1,5 @@
 require("dotenv-safe").config();
 
-process.env.SECRET
-
 var express = require("express");
 var morgan = require("morgan");
 var cors = require("cors");
