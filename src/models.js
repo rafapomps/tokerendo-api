@@ -29,9 +29,6 @@ const Usuario = database.define("usuario", {
   endereco: {
     type: Sequelize.STRING,
   },
-  cnpj: {
-    type: Sequelize.STRING,
-  },
   senha: {
     type: Sequelize.STRING,
   },
